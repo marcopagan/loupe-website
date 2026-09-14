@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="12.973" fill="#4CB3A5"/>
+<circle cx="24.3241" cy="23.6755" r="7.13514" stroke="white" stroke-width="3.24324"/>
+<circle cx="24.3242" cy="37.946" r="2.91892" fill="white"/>
+<circle cx="24.3242" cy="9.40525" r="2.91892" fill="#3D5C58"/>
+<circle cx="38.5947" cy="23.6756" r="2.91892" transform="rotate(-90 38.5947 23.6756)" fill="#3D5C58"/>
+<circle cx="10.0537" cy="23.6756" r="2.91892" transform="rotate(-90 10.0537 23.6756)" fill="#3D5C58"/>
+<circle cx="34.415" cy="13.5849" r="2.91892" transform="rotate(-135 34.415 13.5849)" fill="#3D5C58"/>
+<circle cx="14.2334" cy="33.7663" r="2.91892" transform="rotate(-135 14.2334 33.7663)" fill="#3D5C58"/>
+<circle cx="14.2334" cy="13.585" r="2.91892" transform="rotate(135 14.2334 13.585)" fill="#3D5C58"/>
+<circle cx="34.415" cy="33.7659" r="2.91892" transform="rotate(135 34.415 33.7659)" fill="#3D5C58"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.8695 35.4693C25.0857 34.9803 24.4647 32.8593 27.094 31.9827H21.5547C24.184 32.8593 23.563 34.9803 22.7792 35.4693H25.8695Z" fill="white"/>
+</svg>
