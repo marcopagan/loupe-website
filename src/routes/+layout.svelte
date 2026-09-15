@@ -9,7 +9,6 @@
   <link rel="icon" href="imgs/favicon.svg" />
   <meta name="description" content="Loupe helps researchers build, visualize, and share the evidence behind an object's history, from its first known record to today." />
   <meta name="keywords" content="Loupe, tool, provenance, research">
-  <meta name="author" content="Calibro" />
   <link rel="canonical" href="https://domain.ext" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />

@@ -6,18 +6,13 @@
     import { base } from '$app/paths';
 </script>
 
-
-
 <TopNav />
 
-<main class="grid grid-cols-1 my-0 lg:my-16">
-    
-
+<main class="grid grid-cols-1 my-0 lg:my-16 -mt-2">
 
     <Hero />
 
-
-    <!-- What is it (with border) -->
+    <!-- What is it -->
     <section class="container mx-auto grid grid-cols-12 gap-16 py-24 lg:py-48 px-16">
         <div class="col-span-12 lg:col-span-5 flex justify-center flex-col gap-16 lg:pr-48">
             <h2 class="h2">What is it?</h2>
@@ -30,20 +25,10 @@
         </div>
     </section>
 
-
-
-
-
-
     <!-- Feature -->
     <FeaturesSection />
 
-
-
-
-
-
-    <!-- About colored background (center) -->
+    <!-- About  -->
     <section class="py-24 lg:py-120 bg-primary-100">
         <div class="container mx-auto gap-32 lg:gap-48 px-16 py-16 lg:py-0 flex flex-col flex-wrap items-center">
         <div class="flex justify-center flex-col gap-16 lg:w-lg text-center">
@@ -53,7 +38,7 @@
             </p>
         </div>
         <div class="col-span-12 lg:col-span-7 flex flex-col md:flex-row gap-16">
-            <div class="card p-16 preset-outlined flex flex-col gap-16 bg-neutral-50" style="border: 1.5px solid var(--color-surface-200)">
+            <div class="card p-16 flex flex-col gap-16 bg-white w-full border-[1.5px] border-surface-100">
                 <div class="flex flex-wrap items-center gap-16">
                     <img src={`${base}/imgs/card-db.svg`} width="48" height="48" alt="Digital Benin logo">
                     <h3 class="h3">Digital Benin</h3>
@@ -64,7 +49,7 @@
                     <IconArrowUpRight stroke="1.5" class="size-18" />
                 </a>
             </div>
-            <div class="card p-16 preset-outlined flex flex-col gap-16 bg-neutral-50" style="border: 1.5px solid var(--color-surface-200)">
+            <div class="card p-16 flex flex-col gap-16 bg-white w-full border-[1.5px] border-surface-100">
                 <div class="flex flex-wrap items-center gap-16">
                     <img src={`${base}/imgs/card-okpan.svg`} width="48" height="48" alt="Ọkpan logo">
                     <h3 class="h3">Ọkpan</h3>
@@ -79,45 +64,26 @@
         </div>
     </section>
 
-
-
-    <!-- About white background (side)
-    <section class="container mx-auto grid grid-cols-12 gap-16 py-24 lg:py-96 px-16">
-        <div class="col-span-12 lg:col-span-5 flex justify-center flex-col gap-16 lg:pr-48">
-            <h2 class="h2">About the project</h2>
-            <p class="text-surface-600">
-                Vivamus eget consequat justo. Quisque hendrerit augue eu dignissim bibendum. Fusce ut est sed nibh bibendum auctor in et urna. Praesent et tincidunt elit.
-            </p>
-        </div>
-        <div class="col-span-12 lg:col-span-7 flex flex-col md:flex-row gap-16">
-            <div class="card p-16 preset-outlined flex flex-col gap-16" style="border: 1.5px solid var(--color-surface-100)">
-                <img src={`${base}/imgs/card-db.svg`} width="48" height="48" alt="Digital Benin logo">
-                <h4 class="font-semibold">Digital Benin</h4>
-                <p class="text-sm" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
-                <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-brand p-16 hover:gap-12">
-                    Go to the website
-                    <IconArrowUpRight stroke="1.5" class="size-18" />
-                </a>
+    <!-- Contacts (light background) -->
+    <section class="py-24 lg:py-120">
+        <div class="container mx-auto flex flex-col gap-16 px-16">
+            <h2 class="h2">Contact us</h2>
+            <div class="lg:columns-2 pb:24">
+                <p class="text-surface-600">
+                    Quisque lacus arcu, ornare eget porta id, lobortis a nulla. In tortor nisl, rhoncus sed efficitur sollicitudin, sagittis vel lacus. In quis porta neque. Ut id ante sed urna accumsan auctor. Nulla suscipit pellentesque nibh, id ultricies tortor porta quis. Vestibulum nec augue ut ex hendrerit feugiat. Phasellus ornare tortor a ullamcorper ultrices. Morbi id elementum est. Cras sodales mollis mi id vestibulum.
+                    <br>
+                    Integer varius eros nec pharetra tristique. Nam id dui neque. Sed varius eget urna vel dapibus. Vivamus posuere neque vel massa porta ultrices. Nunc eget ipsum at nisi eleifend rhoncus. Quisque facilisis felis vitae massa posuere, in imperdiet diam semper. Morbi vestibulum hendrerit augue ac congue. Vestibulum imperdiet nisl sed mattis commodo.
+                </p>
             </div>
-            <div class="card p-16 preset-outlined flex flex-col gap-16" style="border: 1.5px solid var(--color-surface-100)">
-                <img src={`${base}/imgs/card-loupe.svg`} width="48" height="48" alt="Loupe logo">
-                <h4 class="font-semibold">Loupe</h4>
-                <p class="text-sm" style="height: stretch">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
-                <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-brand p-16 hover:gap-12">
-                    Discover it
-                    <IconArrowUpRight stroke="1.5" class="size-18" />
-                </a>
-            </div>
+            <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand bg-primary-600 text-white p-16 gap-8 hover:gap-12 lg:w-3xs">
+                Send us an email
+                <IconMailFast stroke="1.5" class="size-18" />
+            </a>
         </div>
-    </section>  -->
+    </section>
 
-
-
-
-
-
-    <!-- Contacts (dark bg) -->
-    <section class="py-24 lg:py-120 bg-primary-800">
+    <!-- Contacts (dark background) -->
+    <section class="py-24 lg:py-120 bg-[#634C36]">
         <div class="container mx-auto flex flex-col gap-16 px-16">
             <h2 class="h2 text-white">Contact us</h2>
             <div class="lg:columns-2 pb:24">
@@ -133,31 +99,6 @@
             </a>
         </div>
     </section>
-
-    <!-- Contacts (light bg)
-    <section class="py-24 lg:py-120 bg-primary-100">
-        <div class="container mx-auto flex flex-col gap-16 px-16">
-            <h2 class="h2">Contact us</h2>
-            <div class="lg:columns-2 pb:24">
-                <p class="text-primary-900">
-                    Quisque lacus arcu, ornare eget porta id, lobortis a nulla. In tortor nisl, rhoncus sed efficitur sollicitudin, sagittis vel lacus. In quis porta neque. Ut id ante sed urna accumsan auctor. Nulla suscipit pellentesque nibh, id ultricies tortor porta quis. Vestibulum nec augue ut ex hendrerit feugiat. Phasellus ornare tortor a ullamcorper ultrices. Morbi id elementum est. Cras sodales mollis mi id vestibulum.
-                    <br>
-                    Integer varius eros nec pharetra tristique. Nam id dui neque. Sed varius eget urna vel dapibus. Vivamus posuere neque vel massa porta ultrices. Nunc eget ipsum at nisi eleifend rhoncus. Quisque facilisis felis vitae massa posuere, in imperdiet diam semper. Morbi vestibulum hendrerit augue ac congue. Vestibulum imperdiet nisl sed mattis commodo.
-                </p>
-            </div>
-            <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand bg-primary-600 text-white p-16 gap-8 hover:gap-12 lg:w-3xs">
-                Send us an email
-                <IconMailFast stroke="1.5" class="size-18" />
-            </a>
-        </div>
-    </section> -->
-
-
-
-
-
-
-
 
     <!-- Sponsor -->
     <section class="container mx-auto flex flex-wrap gap-24 lg:gap-48 py-32 lg:py-96 px-16">
@@ -187,16 +128,34 @@
             </div>
         </div>
     </section>
-
-
-
-
-
 </main>
 
+<!-- Footer (light) -->
+<footer class="bg-linear-to-t from-primary-100 to-white py-48 px-16 relative overflow-hidden h-450 lg:h-auto">
+    <div class="container mx-auto grid grid-cols-12 gap-24 z-64 relative">
+
+        <div class="col-span-12 lg:col-span-4 flex flex-col gap-24">
+            <div class="flex flex-wrap items-center gap-8">
+                <img src={`${base}/brand/icon-logo.svg`} width="40" height="40" alt="Ọkpan logo">
+                <h3 class="h3">Loupe</h3>
+            </div>
+
+            <p class="text-primary-800 text-balance">
+                Loupe helps researchers build, visualize, and share the evidence behind an object's history, from its first known record to today.
+            </p>
+        </div>
+
+        <div class="col-span-12 lg:col-span-3 lg:col-start-9 lg:flex lg:items-end lg:justify-end">
+            <p class="text-primary-800 text-sm">Information in a small size</p>
+        </div>
+
+    </div>
+
+    <img src={`${base}/brand/footer-logo.svg`} width="750" height="249" alt="Loupe footer logo" class="logo-footer absolute bottom-[-32px] md:bottom-[-64px] right-0 md:right-[5%] w-[140vw] md:w-[700px] h-auto z-32"/>
+</footer>
 
 <!-- Footer (dark) -->
-<footer class="bg-linear-to-t from-black to-primary-900 py-48 px-16 relative overflow-hidden h-450 lg:h-auto">
+<footer class="bg-linear-to-t from-[#2a1f16] to-[#634C36] py-48 px-16 relative overflow-hidden h-450 lg:h-auto">
     <div class="container mx-auto grid grid-cols-12 gap-24 z-64 relative">
 
         <div class="col-span-12 lg:col-span-4 flex flex-col gap-24">

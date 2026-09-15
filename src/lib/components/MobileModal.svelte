@@ -20,7 +20,7 @@
 		<Dialog.Content class="card bg-white w-full max-w-xl px-16 space-y-4 shadow-xl border-[1.5px] border-surface-200 {modalAnimation}">
 
 			<header class="flex justify-between items-center py-16">
-				<Dialog.Title class="font-semibold">Get Ọkpan for your computer</Dialog.Title>
+				<Dialog.Title class="font-semibold">Open Loupe from your computer</Dialog.Title>
 				<Dialog.CloseTrigger class="btn-icon hover:preset-tonal">
 					<IconX class="size-32" stroke="1.5" />
 				</Dialog.CloseTrigger>
@@ -28,11 +28,11 @@
 				            
             <Dialog.Description>
                 <p class="text-sm">
-                    Open this website from your desktop device to start download it.
+					Loupe is optimize for desktop devices.
                 </p>
 
                 <p class="text-xs text-surface-500 pt-16">
-                    Ọkpan is available for Windows and Mac computers.
+                    Open this website from your desktop device to start using it.
                 </p>
                 
 			</Dialog.Description>
