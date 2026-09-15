@@ -1,13 +1,13 @@
 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.143799" y="0.144165" width="35.8562" height="35.8562" rx="10.2448" fill="#FFA347"/>
-<circle cx="17.9795" cy="17.9798" r="5.4522" transform="rotate(-45 17.9795 17.9798)" stroke="white" stroke-width="2.04896"/>
-<circle cx="25.4428" cy="25.4431" r="2.15889" transform="rotate(-45 25.4428 25.4431)" fill="white"/>
-<circle cx="10.5163" cy="10.5165" r="2.15889" transform="rotate(-45 10.5163 10.5165)" fill="#AD5700"/>
-<circle cx="25.4429" cy="10.5165" r="2.15889" transform="rotate(-135 25.4429 10.5165)" fill="#AD5700"/>
-<circle cx="10.5164" cy="25.443" r="2.15889" transform="rotate(-135 10.5164 25.443)" fill="#AD5700"/>
-<circle cx="17.9795" cy="7.42524" r="2.15889" transform="rotate(180 17.9795 7.42524)" fill="#AD5700"/>
-<circle cx="17.9795" cy="28.5345" r="2.15889" transform="rotate(180 17.9795 28.5345)" fill="#AD5700"/>
-<circle cx="7.42509" cy="17.9798" r="2.15889" transform="rotate(90 7.42509 17.9798)" fill="#AD5700"/>
-<circle cx="28.5342" cy="17.9799" r="2.15889" transform="rotate(90 28.5342 17.9799)" fill="#AD5700"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M24.9556 23.3398C24.2899 23.494 22.8559 22.7095 23.7725 20.8759L20.8755 23.7729C22.709 22.8563 23.4935 24.2903 23.3394 24.956L24.9556 23.3398Z" fill="white"/>
+<rect width="36" height="35.9999" rx="9.5625" fill="#FFA347"/>
+<ellipse cx="10.3516" cy="25.7142" rx="2.25" ry="2.25" transform="rotate(45 10.3516 25.7142)" fill="#D5700B"/>
+<ellipse cx="25.8633" cy="10.202" rx="2.25" ry="2.25" transform="rotate(45 25.8633 10.202)" fill="#D5700B"/>
+<ellipse cx="10.4507" cy="10.3014" rx="2.25" ry="2.25" transform="rotate(45 10.4507 10.3014)" fill="#D5700B"/>
+<ellipse cx="28.8467" cy="17.9581" rx="2.25" ry="2.25" transform="rotate(45 28.8467 17.9581)" fill="#D5700B"/>
+<ellipse cx="18.1074" cy="28.6974" rx="2.25" ry="2.25" transform="rotate(45 18.1074 28.6974)" fill="#D5700B"/>
+<ellipse cx="7.11963" cy="18.0082" rx="2.25" ry="2.25" transform="rotate(45 7.11963 18.0082)" fill="#D5700B"/>
+<ellipse cx="18.0078" cy="7.11948" rx="2.25" ry="2.25" transform="rotate(45 18.0078 7.11948)" fill="#D5700B"/>
+<ellipse cx="25.4658" cy="25.5155" rx="2.25" ry="2.25" transform="rotate(45 25.4658 25.5155)" fill="white"/>
+<path d="M21.3883 14.279C23.3654 16.256 23.3654 19.4614 21.3883 21.4384C19.4113 23.4155 16.2059 23.4155 14.2289 21.4384C12.2518 19.4614 12.2518 16.256 14.2289 14.279C16.2059 12.3019 19.4113 12.3019 21.3883 14.279Z" stroke="white" stroke-width="1.96875"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.9094 23.3098C24.598 23.0461 23.1744 22.4093 23.772 18.8642L18.8145 23.8218C22.3595 23.2242 22.9964 24.6478 23.2601 25.9592L25.9094 23.3098Z" fill="white"/>
 </svg>
