@@ -33,7 +33,7 @@
         <div class="container mx-auto gap-32 lg:gap-48 px-16 py-16 lg:py-0 flex flex-col flex-wrap items-center">
         <div class="flex justify-center flex-col gap-16 lg:w-lg text-center">
             <h2 class="h2">About the project</h2>
-            <p class="text-surface-600 text-balance">
+            <p class="text-brand-contrast-dark text-balance">
                 Vivamus eget consequat justo. Quisque hendrerit augue eu dignissim bibendum. Fusce ut est sed nibh bibendum auctor in et urna. Praesent et tincidunt elit.
             </p>
         </div>
@@ -43,7 +43,7 @@
                     <img src={`${base}/imgs/card-db.svg`} width="48" height="48" alt="Digital Benin logo">
                     <h3 class="h3">Digital Benin</h3>
                 </div>
-                <p class="text-sm" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
+                <p class="text-sm text-surface-600" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
                 <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-surface bg-surface-100 p-16 hover:gap-12 lg:w-3xs">
                     Go to the website
                     <IconArrowUpRight stroke="1.5" class="size-18" />
@@ -54,7 +54,7 @@
                     <img src={`${base}/imgs/card-okpan.svg`} width="48" height="48" alt="Ọkpan logo">
                     <h3 class="h3">Ọkpan</h3>
                 </div>
-                <p class="text-sm" style="height: stretch">Ọkpan is a platform for reconnecting dispersed collections. Import artefact records from any source, enrich them with situated knowledge such as Indigenous designations, oral histories, and cultural context, and publish a unified catalogue that brings a scattered collection back together, wherever the objects themselves remain.</p>
+                <p class="text-sm text-surface-600" style="height: stretch">Ọkpan is a platform for reconnecting dispersed collections. Import artefact records from any source, enrich them with situated knowledge such as Indigenous designations, oral histories, and cultural context, and publish a unified catalogue that brings a scattered collection back together, wherever the objects themselves remain.</p>
                 <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-surface bg-surface-100 p-16 hover:gap-12 lg:w-3xs">
                     Discover it
                     <IconArrowUpRight stroke="1.5" class="size-18" />

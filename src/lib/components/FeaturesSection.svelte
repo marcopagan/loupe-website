@@ -79,7 +79,7 @@
 									class="pb-16 lg:hidden"
             						src={`${base}/imgs/${feature.imgName}`}
             						alt={feature.title} />
-							    <p>{feature.description}</p>
+							    <p class="text-brand-contrast-dark">{feature.description}</p>
 						    </div>
 					    {/if}
 				    {/snippet}

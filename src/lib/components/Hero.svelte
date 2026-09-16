@@ -6,15 +6,15 @@
 </script>
 
 <section class="container mx-auto px-0 md:px-16">
-    <div class="hero h-600 md:h-700 sm:rounded-lg relative overflow-hidden">
+    <div class="hero h-[80vh] sm:rounded-lg relative overflow-hidden">
 
         <video autoplay disablepictureinpicture loop muted class="w-full h-full absolute object-cover -z-5">
             <source src={`${base}/brand/hero-vid.mp4`} type="video/mp4" />
         </video>
 
-        <div class="flex flex-col flex-wrap gap-24 justify-center px-16 md:px-48 h-full z-8">
+        <div class="flex flex-col flex-wrap gap-24 justify-center py-16 px-16 md:px-48 h-full z-8">
             <h3 class="h1 leading-[1]">A tool to structure and visualize provenance research</h3>
-            <p>Loupe helps researchers build, visualize, and share the evidence behind an object's history, from its first known record to today.</p>
+            <p class="text-brand-contrast-dark">Loupe helps researchers build, visualize, and share the evidence behind an object's history, from its first known record to today.</p>
 
             <div class="download-desktop hidden md:inline">
 	            <a href="https://digitalbenin.org" class="btn preset-filled bg-primary-800 px-32 py-16 gap-8 hover:gap-12">
