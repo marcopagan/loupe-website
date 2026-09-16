@@ -10,7 +10,8 @@
 			title: 'Structured provenance data',
 			description:
 				'Record ownership events with precise, standardized dates, including uncertain or partial ones, using the Extended Date/Time Format (EDTF) specification, so "circa 1900" or "before 1930" stay structured, meaningful data instead of loose text.',
-            imgName: 'feature0.png',
+            fileName: 'feature0.png',
+			fileType: 'image',
 			icon: IconCalendarBolt
                 
 		},
@@ -19,7 +20,8 @@
 			title: 'Visualize provenance timelines',
 			description:
 				"See an object's full history as a clear timeline, making ownership gaps, transfers, and disputed periods immediately visible.",
-            imgName: 'feature1.png',
+            fileName: 'feature1.png',
+			fileType: 'image',
 			icon: IconTimelineEvent
 		},
 		{
@@ -27,7 +29,8 @@
 			title: 'Source and evidence linking',
 			description:
 				"Attach documents, archival records, and citations to each event in an object's history, so every claim in the timeline is backed by traceable evidence.",
-            imgName: 'feature2.png',
+            fileName: 'feature2.png',
+			fileType: 'image',
 			icon: IconLinkPlus
 		},
         {
@@ -35,7 +38,8 @@
 			title: 'Structured data export',
 			description:
 				"Export your provenance research in structured formats, ready to feed into publications, restitution claims, or other research and collection systems.",
-            imgName: 'feature3.png',
+            fileName: 'feature3.png',
+			fileType: 'image',
 			icon: IconTableExport
 		}
 	];
@@ -47,11 +51,20 @@
 <section class="container mx-auto py-48 px-16 grid grid-cols-12 gap-16">
 
 	<div class="col-span-12 lg:col-span-7">
-        <img 
-            src={`${base}/imgs/${features[parseInt(selected)].imgName}`}
-            alt={features[parseInt(selected)].title}
-			class="hidden lg:inline"
-        >
+		{#if features[parseInt(selected)].fileType === 'video'}
+			<video 
+				autoplay disablepictureinpicture loop muted
+				class="hidden lg:inline rounded-xl border-1 border-surface-100 aspect-3/2 object-cover"
+        	>
+				<source src={`${base}/imgs/${features[parseInt(selected)].fileName}`} type="video/mp4" />
+			</video>
+		{:else if features[parseInt(selected)].fileType === 'image'}
+			<img 
+            	src={`${base}/imgs/${features[parseInt(selected)].fileName}`}
+            	alt={features[parseInt(selected)].title}
+				class="hidden lg:inline rounded-xl border-1 border-surface-100"
+        	>
+		{/if}
     </div>
     
     <div class="col-span-12 lg:col-span-5 flex flex-col gap-16 lg:pl-48">
@@ -75,10 +88,20 @@
                     {#snippet element(attributes)}
 					    {#if !attributes.hidden}
 						    <div {...attributes} transition:slide={{ duration: 150 }}>
-								<img 
-									class="pb-16 lg:hidden"
-            						src={`${base}/imgs/${feature.imgName}`}
-            						alt={feature.title} />
+								{#if features[parseInt(selected)].fileType === 'video'}
+									<video 
+										autoplay disablepictureinpicture loop muted
+										class="mb-16 lg:hidden rounded-lg border-1 border-surface-100 aspect-3/2 object-cover"
+        							>
+										<source src={`${base}/imgs/${features[parseInt(selected)].fileName}`} type="video/mp4" />
+									</video>
+								{:else if features[parseInt(selected)].fileType === 'image'}
+									<img 
+										class="mb-16 lg:hidden rounded-lg border-1 border-surface-100"
+            							src={`${base}/imgs/${feature.fileName}`}
+            							alt={feature.title} 
+									/>
+								{/if}
 							    <p class="text-brand-contrast-dark">{feature.description}</p>
 						    </div>
 					    {/if}
