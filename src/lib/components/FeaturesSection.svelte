@@ -10,8 +10,8 @@
 			title: 'Structured provenance data',
 			description:
 				'Record ownership events with precise, standardized dates, including uncertain or partial ones, using the Extended Date/Time Format (EDTF) specification, so "circa 1900" or "before 1930" stay structured, meaningful data instead of loose text.',
-            fileName: 'feature0.png',
-			fileType: 'image',
+            fileName: 'feature0.mp4',
+			fileType: 'video',
 			icon: IconCalendarBolt
                 
 		},
@@ -52,12 +52,14 @@
 
 	<div class="col-span-12 lg:col-span-7">
 		{#if features[parseInt(selected)].fileType === 'video'}
+			{#key selected}
 			<video 
 				autoplay disablepictureinpicture loop muted
-				class="hidden lg:inline rounded-xl border-1 border-surface-100 aspect-3/2 object-cover"
+				class="hidden lg:inline rounded-xl border-1 border-surface-100 aspect-5/4 object-cover"
         	>
 				<source src={`${base}/imgs/${features[parseInt(selected)].fileName}`} type="video/mp4" />
 			</video>
+			{/key}
 		{:else if features[parseInt(selected)].fileType === 'image'}
 			<img 
             	src={`${base}/imgs/${features[parseInt(selected)].fileName}`}
@@ -88,14 +90,14 @@
                     {#snippet element(attributes)}
 					    {#if !attributes.hidden}
 						    <div {...attributes} transition:slide={{ duration: 150 }}>
-								{#if features[parseInt(selected)].fileType === 'video'}
+								{#if feature.fileType === 'video'}
 									<video 
 										autoplay disablepictureinpicture loop muted
-										class="mb-16 lg:hidden rounded-lg border-1 border-surface-100 aspect-3/2 object-cover"
+										class="mb-16 lg:hidden rounded-lg border-1 border-surface-100 aspect-5/4 object-cover"
         							>
-										<source src={`${base}/imgs/${features[parseInt(selected)].fileName}`} type="video/mp4" />
+										<source src={`${base}/imgs/${feature.fileName}`} type="video/mp4" />
 									</video>
-								{:else if features[parseInt(selected)].fileType === 'image'}
+								{:else if feature.fileType === 'image'}
 									<img 
 										class="mb-16 lg:hidden rounded-lg border-1 border-surface-100"
             							src={`${base}/imgs/${feature.fileName}`}

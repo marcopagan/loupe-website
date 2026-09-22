@@ -278,6 +278,7 @@
 
 html{
 	scroll-behavior: smooth;
+	p{text-wrap: balance;}
 }
 
 button:hover, a:hover {
