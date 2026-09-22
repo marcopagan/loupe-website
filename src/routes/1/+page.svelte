@@ -64,18 +64,18 @@
         </div>
     </section>
 
-    <!-- Contacts (light background) -->
-    <section>
-        <div class="container mx-auto flex flex-col gap-16 px-16 py-24 lg:py-120 border-b-[1.5px] border-surface-200">
-            <h2 class="h2">Contact us</h2>
+    <!-- Contacts (dark background) -->
+    <section class="py-24 lg:py-120 bg-[#634C36]">
+        <div class="container mx-auto flex flex-col gap-16 px-16">
+            <h2 class="h2 text-white">Contact us</h2>
             <div class="lg:columns-2 pb:24">
-                <p class="text-surface-600">
+                <p class="text-primary-100">
                     Quisque lacus arcu, ornare eget porta id, lobortis a nulla. In tortor nisl, rhoncus sed efficitur sollicitudin, sagittis vel lacus. In quis porta neque. Ut id ante sed urna accumsan auctor. Nulla suscipit pellentesque nibh, id ultricies tortor porta quis. Vestibulum nec augue ut ex hendrerit feugiat. Phasellus ornare tortor a ullamcorper ultrices. Morbi id elementum est. Cras sodales mollis mi id vestibulum.
                     <br>
                     Integer varius eros nec pharetra tristique. Nam id dui neque. Sed varius eget urna vel dapibus. Vivamus posuere neque vel massa porta ultrices. Nunc eget ipsum at nisi eleifend rhoncus. Quisque facilisis felis vitae massa posuere, in imperdiet diam semper. Morbi vestibulum hendrerit augue ac congue. Vestibulum imperdiet nisl sed mattis commodo.
                 </p>
             </div>
-            <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand bg-primary-600 text-white p-16 gap-8 hover:gap-12 lg:w-3xs">
+            <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-filled-brand text-white p-16 gap-8 hover:gap-12 lg:w-3xs">
                 Send us an email
                 <IconMailFast stroke="1.5" class="size-18" />
             </a>
@@ -112,23 +112,23 @@
     </section>
 </main>
 
-<!-- Footer (dark) -->
-<footer class="bg-linear-to-t from-[#2a1f16] to-[#634C36] py-48 px-16 relative overflow-hidden h-450 lg:h-auto">
+<!-- Footer (light) -->
+<footer class="bg-linear-to-t from-primary-100 to-white py-48 px-16 relative overflow-hidden h-450 lg:h-auto">
     <div class="container mx-auto grid grid-cols-12 gap-24 z-64 relative">
 
         <div class="col-span-12 lg:col-span-4 flex flex-col gap-24">
             <div class="flex flex-wrap items-center gap-8">
                 <img src={`${base}/brand/icon-logo.svg`} width="40" height="40" alt="Ọkpan logo">
-                <h3 class="h3 text-white">Loupe</h3>
+                <h3 class="h3">Loupe</h3>
             </div>
 
-            <p class="text-primary-200 text-balance">
+            <p class="text-primary-800 text-balance">
                 Loupe helps researchers build, visualize, and share the evidence behind an object's history, from its first known record to today.
             </p>
         </div>
 
         <div class="col-span-12 lg:col-span-3 lg:col-start-9 lg:flex lg:items-end lg:justify-end">
-            <p class="text-primary-200 text-sm">Information in a small size</p>
+            <p class="text-primary-800 text-sm">Information in a small size</p>
         </div>
 
     </div>
