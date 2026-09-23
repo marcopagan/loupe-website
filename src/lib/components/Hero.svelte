@@ -9,7 +9,7 @@
     <div class="hero h-[80vh] sm:rounded-lg relative overflow-hidden">
 
         <video autoplay disablepictureinpicture loop muted class="w-full h-full absolute object-cover -z-5">
-            <source src={`${base}/brand/hero-vid.mp4`} type="video/mp4" />
+            <source src={`${base}/brand/hero-vid.webm`} type="video/webm" />
         </video>
 
         <div class="flex flex-col flex-wrap gap-24 justify-center py-16 px-16 md:px-48 h-full z-8">
